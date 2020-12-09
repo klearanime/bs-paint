@@ -1,25 +1,49 @@
 .app {
   display: flex;
-  height: 500px;
-}
+  flex-direction: column;
+  height: 444px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(90, 87, 87)
+} 
 
 .headings {
   display: flex;
-}
+  flex-direction: column;
+  align-items: center;
+  color: rgb(174, 230, 230);
+} 
 
-.brush-selection {
-  height: 70px;
+.size {
   display: flex;
-}
+  flex-direction: column;
+  align-items: center;
+} 
 
-.paint {
-  height: 250px;
-  display: flex;
+.size-input {
+  width: 20px;
 }
 
 .palette {
   display: flex;
   margin-left: -30px;
+}
+
+.brush-selection {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.paint {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .brush {
@@ -32,8 +56,8 @@
 }
 
 .current-brush, .palette-color {
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   border: 1px solid black;
 }
 
@@ -43,7 +67,7 @@
   grid-template-columns: repeat(10, 1fr);
   height: 300px;
   width: 300px;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 5, 5);
 }
 
 .square {
@@ -51,21 +75,22 @@
 }
 
 .color-1 {
-
+  background-color: rgb(103, 252, 84);
 }
 
 .color-2 {
-
+  background-color: rgb(248, 7, 156);
 }
 
 .color-3 {
-
+  background-color: rgb(6, 193, 250);
 }
 
 .color-4 {
-
+  background-color: rgb(195, 70, 245);
 }
 
 .color-5 {
-
+  background-color: white;
 }
+
